@@ -1,4 +1,4 @@
-<h1>Todo List</h1>
+<p>Todo List</p>
 <table border="1">
 %for row in rows:
     <tr>
@@ -6,7 +6,10 @@
         <td>{{item}}</td>
     %end
         <td>
-           DELETE
+            <a href="/delete_item/{{row[0]}}">DELETE</a>    
         </td>
     </tr>
 %end
+</table>
+<a href="/new_item">New Item...</a>
+<hr/>
